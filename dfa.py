@@ -39,7 +39,8 @@ def get_char(text,pos):
 	# χαρακτήρες εισόδου εδώ.
 	# Για λεπτομέρειες δείτε στο:
 	# http://mixstef.github.io/courses/compilers/lecturedoc/unit1/module1.html#id11
-	
+	if c>='0' and c<='9':
+		return 'DIGIT'
 	return c
 	
 
