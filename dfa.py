@@ -9,9 +9,9 @@
 
 transitions = { 's0':{'DIGIT':'s1','.':'s2'},
 		's1':{'DIGIT':'s1','.':'s3'},
-		's2':{'DIGIT':'s5'},
-		's3':{'DIGIT':'s5'},
-		's5':{'DIGIT':'s5'}
+		's2':{'DIGIT':'s4'},
+		's3':{'DIGIT':'s4'},
+		's4':{'DIGIT':'s4'}
 
 	# (Α) Συμπληρώστε τον πίνακα μεταβάσεων ως λεξικό (dictionary).
 	# Η αρχική κατάσταση πρέπει να ονομάζεται 's0'.
@@ -21,7 +21,7 @@ transitions = { 's0':{'DIGIT':'s1','.':'s2'},
      	      } 
 
 
-accepts = { 's3':'FLOAT_TOKEN','s4':'FLOAT_TOKEN','s5':'FLOAT_TOKEN'
+accepts = { 's3':'FLOAT_TOKEN','s4':'FLOAT_TOKEN'
 
 	# (Β) Συμπληρώστε το λεξικό των καταστάσεων αποδοχής και των
 	# αντίστοιχων επιστρεφόμενων συμβόλων (tokens)
